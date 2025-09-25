@@ -1,7 +1,7 @@
-export default function Favourites() {
+export default function SearchBook() {
   return (
     <div>
-      <h1>My Favourite Books</h1>
+      <h1>Books</h1>
     </div>
   );
 }
