@@ -5,6 +5,7 @@ import "./index.css";
 // Router components
 import App from "./App.jsx";
 import HomePage from "./pages/HomePage.jsx";
+import DetailsPage from "./pages/DetailsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+      },
+      {
+        path: "/details/:detailsId",
+        element: <DetailsPage />,
       },
     ],
   },
