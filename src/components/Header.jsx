@@ -25,7 +25,7 @@ export default function Header() {
       </div>
 
       <div>
-        <form action="">
+        <form onSubmit={FetchBooks}>
           <input type="text" placeholder="Search Books..."></input>
           <button type="submit">Search Icon</button>
           <button>Favorites Icon</button>
