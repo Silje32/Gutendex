@@ -16,7 +16,7 @@ export default function FetchBooks() {
           throw new Error(`HTTP error.status ${response.status}`);
         }
         const result = await response.json();
-        setData(result);
+        setBooks(result);
       } catch (error) {
         setError(error.message);
       } finally {
