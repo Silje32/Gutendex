@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function FetchBooks(props) {
+export default function FetchBooks() {
   const [books, setBooks] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -11,6 +11,7 @@ export default function FetchBooks(props) {
       setError(null);
       try {
         const response = await fetch("https://gutendex.com/books");
+        console.log("response");
         if (!response.ok) {
           throw new Error(`HTTP error.status ${response.status}`);
         }

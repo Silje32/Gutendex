@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 export default function Header() {
   return (
@@ -22,14 +21,6 @@ export default function Header() {
 
       <div>
         <Link to="/">Gutendex</Link>
-      </div>
-
-      <div>
-        <form onSubmit={FetchBooks}>
-          <input type="text" placeholder="Search Books..."></input>
-          <button type="submit">Search Icon</button>
-          <button>Favorites Icon</button>
-        </form>
       </div>
     </header>
   );
