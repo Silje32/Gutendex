@@ -18,8 +18,15 @@ export default function Header() {
         <Link to="/category/:categoryName">War</Link>
         <Link to="/category/:categoryName">Philosophy</Link>
       </nav>
+
       <div>
         <Link to="/">Gutendex</Link>
+      </div>
+
+      <div>
+        <input type="text" placeholder="Search Books..."></input>
+        <button>Search Icon</button>
+        <button>Favorites Icon</button>
       </div>
     </header>
   );
