@@ -11,7 +11,7 @@ export default function FetchBooks() {
       setError(null);
       try {
         const response = await fetch("https://gutendex.com/books");
-        console.log("response");
+        console.log(response);
         if (!response.ok) {
           throw new Error(`HTTP error.status ${response.status}`);
         }
