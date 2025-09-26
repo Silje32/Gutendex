@@ -1,7 +1,7 @@
-export default function SearchBook() {
+export default function BookList() {
   return (
-    <div>
+    <ul>
       <h1>Books</h1>
-    </div>
+    </ul>
   );
 }
