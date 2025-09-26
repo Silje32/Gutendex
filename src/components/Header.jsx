@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import FetchBooks from "../components/FetchBooks.jsx";
 
 export default function Header() {
   return (
@@ -21,6 +22,9 @@ export default function Header() {
 
       <div>
         <Link to="/">Gutendex</Link>
+      </div>
+      <div>
+        <FetchBooks />
       </div>
     </header>
   );
