@@ -24,9 +24,11 @@ export default function Header() {
       </div>
 
       <div>
-        <input type="text" placeholder="Search Books..."></input>
-        <button>Search Icon</button>
-        <button>Favorites Icon</button>
+        <form action="">
+          <input type="text" placeholder="Search Books..."></input>
+          <button>Search Icon</button>
+          <button>Favorites Icon</button>
+        </form>
       </div>
     </header>
   );
