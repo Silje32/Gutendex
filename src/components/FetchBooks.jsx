@@ -25,6 +25,7 @@ export default function FetchBooks(props) {
     fetchData();
   }, []);
 
+  // Stops the page from reloading
   function handleBooks(e) {
     e.preventDefault();
   }
@@ -39,7 +40,7 @@ export default function FetchBooks(props) {
             type="text"
             placeholder="Search Books..."
             onChange={(e) => setBooks(e.target.value)}
-          ></input>
+          />
           <button type="submit">Search Icon</button>
           <button>Favorites Icon</button>
         </form>
