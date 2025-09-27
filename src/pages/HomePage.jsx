@@ -1,7 +1,9 @@
-export default function BookList() {
+export default function BookList({ data: { books } }) {
   return (
     <ul>
-      <h1>Books</h1>
+      {books.map((book) => {
+        return <FetchBooks key={book.id} />;
+      })}
     </ul>
   );
 }
