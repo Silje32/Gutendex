@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function FetchBooks() {
-  const [books, setBooks] = useState(null);
+  const [books, setBooks] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -24,7 +24,7 @@ export default function FetchBooks() {
       }
     };
     fetchData();
-  }, []);
+  }, [books]);
 
   // Stops the page from reloading
   function handleBooks(e) {
