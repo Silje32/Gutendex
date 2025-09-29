@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import FetchBooks from "../components/FetchBooks.jsx";
 
-export default function Header() {
+export default function Header({ data: { handleBooks } }) {
   return (
     <header>
       <nav>
-        <Link to="/category/:categoryName">Fiction</Link>
+        <Link to="/category/:categoryName">${Genre}</Link>
         <Link to="/category/:categoryName">Mystery</Link>
         <Link to="/category/:categoryName">Thriller</Link>
         <Link to="/category/:categoryName">Romance</Link>
