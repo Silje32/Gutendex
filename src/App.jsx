@@ -6,9 +6,13 @@ import { useState } from "react";
 
 function App() {
   const [books, setBooks] = useState({});
+
+  function handleBooks(search) {
+    setBooks((prevBooks) => [...prevBooks, search]);
+  }
   return (
     <>
-      <Header data={books} />
+      <Header data={{ handleBooks }} />
       <Outlet />
       <Footer />
     </>
