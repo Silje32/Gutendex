@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import FetchBooks from "../components/FetchBooks.jsx";
 
-export default function Header({ data: { handleBooks } }) {
+export default function Header() {
   return (
     <header>
       <nav>
@@ -21,7 +21,7 @@ export default function Header({ data: { handleBooks } }) {
       </nav>
 
       <div>
-        <Link to="/">Gutendex</Link>
+        <Link to="/">GUTENDEX</Link>
       </div>
       <div>
         <FetchBooks />
