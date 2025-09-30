@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function FetchBooks() {
-  const [books, setBooks] = useState({});
+  const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
