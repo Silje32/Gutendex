@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <Outlet data={{ searchBooks }} />
+      <Outlet />
       <Footer />
     </>
   );
