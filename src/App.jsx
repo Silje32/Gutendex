@@ -12,8 +12,8 @@ function App() {
   }
   return (
     <>
-      <Header />
-      <Outlet data={{ searchBooks }} />
+      <Header data={{ searchBooks }} />
+      <Outlet />
       <Footer />
     </>
   );
