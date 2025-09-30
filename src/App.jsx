@@ -5,10 +5,10 @@ import Footer from "./components/Footer.jsx";
 import { useState } from "react";
 
 function App() {
-  const [books, setBooks] = useState([]);
+  const [list, setList] = useState([]);
 
   function searchBooks(search) {
-    setBooks((prevBooks) => [...prevBooks, search]);
+    setList((prevBooks) => [...prevBooks, search]);
   }
   return (
     <>
