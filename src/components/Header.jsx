@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import FetchBooks from "../components/FetchBooks.jsx";
-import { useState } from "react";
 
 export default function Header({ data: { searchBooks } }) {
-  const [list, setList] = useState([]);
   return (
     <header>
       <nav>
