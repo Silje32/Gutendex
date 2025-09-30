@@ -1,9 +1,9 @@
-import FetchBooks from "../components/FetchBooks.jsx";
+import BookList from "../components/BookList.jsx";
 
-export default function BookList() {
+export default function HomePage() {
   return (
     <ul>
-      return <FetchBooks />
+      return <BookList />
     </ul>
   );
 }
