@@ -5,15 +5,15 @@ import Footer from "./components/Footer.jsx";
 import { useState } from "react";
 
 function App() {
-  const [books, setBooks] = useState({});
+  const [list, setList] = useState([]);
 
-  function handleBooks(search) {
-    setBooks((prevBooks) => [...prevBooks, search]);
+  function searchBooks(search) {
+    setList((prevBooks) => [...prevBooks, search]);
   }
   return (
     <>
-      <Header data={{ handleBooks }} />
-      <Outlet />
+      <Header />
+      <Outlet data={{ searchBooks }} />
       <Footer />
     </>
   );
