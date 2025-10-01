@@ -1,9 +1,11 @@
 import BookItem from "../components/BookItem.jsx";
 
-export default function BookList() {
+export default function BookList({ data: { books } }) {
   return (
     <ul>
-      <BookItem />
+      {books.map((book) => {
+        return <BookItem key={book.id} />;
+      })}
     </ul>
   );
 }
