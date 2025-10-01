@@ -1,7 +1,7 @@
-export default function BookItem() {
+export default function BookItem({ data: { books } }) {
   return (
     <li>
-      <p>Books</p>
+      <p>{books.name}</p>
     </li>
   );
 }
