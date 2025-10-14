@@ -17,6 +17,7 @@ export default function FetchBooks() {
         }
         const result = await response.json();
         setBooks(result);
+        console.log(result);
       } catch (error) {
         setError(error.message);
       } finally {
