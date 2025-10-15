@@ -1,0 +1,15 @@
+export default CategoryArray = [
+  { name: "fiction", title: "Fiction", filepath: "/category/fiction" },
+  { name: "mystery", title: "Mystery", filepath: "/category/mystery" },
+  { name: "thriller", title: "Thriller", filepath: "/category/thriller" },
+  { name: "romance", title: "Romance", filepath: "/category/romance" },
+  { name: "fantasy", title: "Fantasy", filepath: "/category/fantasy" },
+  { name: "morality", title: "Morality", filepath: "/category/morality" },
+  { name: "society", title: "Society", filepath: "/category/society" },
+  { name: "power", title: "Power", filepath: "/category/power" },
+  { name: "justice", title: "Justice", filepath: "/category/justice" },
+  { name: "adventure", title: "Adventure", filepath: "/category/adventure" },
+  { name: "tragedy", title: "Tragedy", filepath: "/category/tragedy" },
+  { name: "war", title: "War", filepath: "/category/war" },
+  { name: "philosophy", title: "Philosophy", filepath: "/category/philosophy" },
+];
