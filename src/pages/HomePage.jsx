@@ -1,9 +1,5 @@
 import BookList from "../components/BookList.jsx";
 
 export default function HomePage() {
-  return (
-    <ul>
-      return <BookList />
-    </ul>
-  );
+  return <ul>Booklist</ul>;
 }
