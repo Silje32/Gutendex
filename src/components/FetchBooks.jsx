@@ -25,7 +25,7 @@ export default function FetchBooks() {
       }
     };
     fetchData();
-  }, [books]);
+  }, []);
 
   // Stops the page from reloading
   function handleBooks(e) {
