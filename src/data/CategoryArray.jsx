@@ -1,4 +1,4 @@
-export default CategoryArray = [
+export const CategoryArray = [
   { name: "fiction", title: "Fiction", filepath: "/category/fiction" },
   { name: "mystery", title: "Mystery", filepath: "/category/mystery" },
   { name: "thriller", title: "Thriller", filepath: "/category/thriller" },
