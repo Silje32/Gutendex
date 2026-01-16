@@ -1,12 +1,22 @@
 :root {
   --blue: rgb(66, 105, 183);
+  --light-blue: rgb(100, 140, 220);
+  --light-light-blue: rgb(201, 222, 254);
   --steel: rgb(88, 92, 99);
   --white: rgb(249, 249, 249);
   --font-family: "Open Sans", "sans-serif";
+  --font-size: 16px;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--light-light-blue);
+  color: var(--steel);
+  width: 100%;
 }
