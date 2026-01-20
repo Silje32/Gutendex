@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import styles from "../header/Header.module.css";
 
 export default function HeaderList({ categories }) {
   return (
@@ -6,7 +7,7 @@ export default function HeaderList({ categories }) {
       {categories.map((category) => (
         <Link
           key={category.name}
-          className="category-link"
+          className={styles.categorylink}
           to={category.filepath}
         >
           {category.title}
