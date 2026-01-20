@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FetchBooks, HeaderList } from "../index.jsx";
 import { CategoryArray } from "../../data/CategoryArray.jsx";
+import styles from "../header/Header.module.css";
 
 export default function Header() {
   return (
