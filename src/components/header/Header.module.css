@@ -1,6 +1,16 @@
 .headerlink {
   text-decoration: none;
   color: black;
+}
+.categorylink {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--blue);
   font-size: 24px;
-  font-weight: bold;
+}
+.categorylink:visited {
+  color: var(--light-blue);
+}
+.categorylink:hover {
+  color: var(--steel);
 }
