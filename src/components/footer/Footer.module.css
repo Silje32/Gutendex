@@ -1,4 +1,4 @@
-footer {
+.footer {
   color: var(--steel);
   background-color: white;
   font-family: "Open Sans", "sans-serif";
@@ -9,7 +9,6 @@ footer {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 
 h4 {
