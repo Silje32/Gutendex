@@ -1,5 +1,5 @@
 // Export all functions from individual modules
-export { default as HeaderList } from "./HeaderList.jsx";
+export { default as HeaderList } from "../components/header/HeaderList.jsx";
 export { default as Header } from "../components/header/Header.jsx";
 export { default as Footer } from "../components/footer/Footer.jsx";
 export { default as BookList } from "./BookList.jsx";
