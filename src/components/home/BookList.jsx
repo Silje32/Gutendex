@@ -1,4 +1,4 @@
-import BookItem from "../components/BookItem.jsx";
+import BookItem from "../BookItem.jsx";
 
 export default function BookList({ data: { books } }) {
   return (
