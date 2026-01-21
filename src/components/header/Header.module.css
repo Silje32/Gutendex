@@ -28,7 +28,7 @@ button:hover {
   background-color: var(--light-blue);
 }
 button:focus {
-  outline: 3px solid var(--steel);
+  outline: 2px solid var(--steel);
 }
 input {
   margin-left: 20px;
@@ -38,5 +38,5 @@ input {
   border-radius: 4px;
 }
 input:focus {
-  outline: 3px solid var(--steel);
+  outline: 2px solid var(--steel);
 }
