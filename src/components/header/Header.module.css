@@ -27,3 +27,16 @@ button {
 button:hover {
   background-color: var(--light-blue);
 }
+button:focus {
+  outline: 3px solid var(--steel);
+}
+input {
+  margin-left: 20px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid var(--steel);
+  border-radius: 4px;
+}
+input:focus {
+  outline: 3px solid var(--steel);
+}
