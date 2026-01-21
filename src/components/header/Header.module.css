@@ -14,3 +14,16 @@
 .categorylink:hover {
   color: var(--steel);
 }
+button {
+  margin-left: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--light-blue);
+}
