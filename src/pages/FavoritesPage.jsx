@@ -1,7 +1,9 @@
+import Favorites from "../components/favourites/Favorites";
+
 export default function FavoritesPage() {
   return (
-    <div>
-      <h1>My Favorite Books</h1>
-    </div>
+    <>
+      <Favorites />
+    </>
   );
 }
