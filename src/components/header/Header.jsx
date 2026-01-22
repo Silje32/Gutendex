@@ -6,7 +6,7 @@ import styles from "../header/Header.module.css";
 export default function Header() {
   return (
     <>
-      <div>
+      <div className={styles.container}>
         <Link className={styles.headerlink} to="/">
           GUTENDEX
         </Link>

@@ -1,12 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 8px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+  width: 100%;
+}
 .headerlink {
   text-decoration: none;
-  color: black;
+  color: var(--steel);
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding: 20px;
+  max-height: 60px;
 }
 .categorylink {
   margin: 0 15px;
   text-decoration: none;
   color: var(--blue);
   font-size: 24px;
+  margin-bottom: 20px;
 }
 .categorylink:visited {
   color: var(--light-blue);
@@ -31,12 +50,19 @@ button:focus {
   outline: 2px solid var(--steel);
 }
 input {
-  margin-left: 20px;
+  margin-top: 20px;
   padding: 8px;
   font-size: 16px;
   border: 1px solid var(--steel);
   border-radius: 4px;
+  width: 400px;
 }
 input:focus {
   outline: 2px solid var(--steel);
+}
+.header {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  max-width: 200svw;
 }

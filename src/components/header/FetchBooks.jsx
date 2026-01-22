@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import styles from "./Header.module.css";
 
 export default function FetchBooks() {
   const [books, setBooks] = useState([]);
@@ -33,7 +34,7 @@ export default function FetchBooks() {
   }
 
   return (
-    <div>
+    <div className={styles.header}>
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: "red" }}>Error: {error}</p>}
       {books && (
