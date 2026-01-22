@@ -9,6 +9,8 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
+  padding: 10px;
 }
 
 h4 {
