@@ -1,0 +1,7 @@
+.myfavorites {
+  text-decoration: none;
+  color: var(--steel);
+  font-size: 35px;
+  margin: 20px;
+  padding: 20px;
+}
