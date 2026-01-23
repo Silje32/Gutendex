@@ -10,6 +10,7 @@ function FavoritesButton() {
         <button
           className={`${styles.mybutton} ${styles.favoritesbutton}`}
           onButtonClick={Favorites}
+          to="/favorites"
         >
           ❤️
         </button>
