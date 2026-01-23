@@ -1,17 +1,20 @@
 .buttoncontainer1 {
   display: flex;
   justify-content: left;
-  margin: 20px;
+  margin: 40px;
   gap: 10px;
 }
-
 .buttoncontainer2 {
+  display: flex;
+  justify-content: right;
+  margin: 40px;
+  gap: 10px;
+}
+.searchcontainer {
   display: flex;
   justify-content: center;
   margin: 20px;
-  gap: 10px;
 }
-
 .mybutton {
   background-color: var(--blue);
   color: white;
@@ -19,11 +22,9 @@
   padding: 10px 20px;
   cursor: pointer;
 }
-
 .mybutton:hover {
   background-color: var(--light-blue);
 }
-
 .searchbutton {
   border-radius: 4px;
   padding: 10px 20px;
