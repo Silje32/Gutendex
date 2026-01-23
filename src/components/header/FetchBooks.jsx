@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import styles from "./Header.module.css";
+import FavoritesButton from "../buttons/Favoritesbutton";
+import styles from "../buttons/Buttons.module.css";
 
 export default function FetchBooks() {
   const [books, setBooks] = useState([]);
@@ -34,20 +35,26 @@ export default function FetchBooks() {
   }
 
   return (
-    <div className={styles.header}>
-      {loading && <p>Loading...</p>}
-      {error && <p style={{ color: "red" }}>Error: {error}</p>}
-      {books && (
-        <form onSubmit={handleBooks}>
-          <input
-            type="text"
-            placeholder="Search Books..."
-            onChange={(e) => setBooks(e.target.value)}
-          />
-          <button type="submit">Search</button>
-          <button>Favorites</button>
-        </form>
-      )}
-    </div>
+    <>
+      <div className={styles.searchcontainer}>
+        {loading && <p>Loading...</p>}
+        {error && <p style={{ color: "red" }}>Error: {error}</p>}
+        {books && (
+          <form onSubmit={handleBooks}>
+            <input
+              type="text"
+              placeholder="Search Books..."
+              onChange={(e) => setBooks(e.target.value)}
+            />
+            <button className={styles.searchbutton} type="submit">
+              Search
+            </button>
+          </form>
+        )}
+      </div>
+      <div>
+        <FavoritesButton />
+      </div>
+    </>
   );
 }
