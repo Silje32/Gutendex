@@ -46,9 +46,11 @@ export default function FetchBooks() {
               placeholder="Search Books..."
               onChange={(e) => setBooks(e.target.value)}
             />
-            <button className={styles.searchbutton} type="submit">
-              Search
-            </button>
+            <input
+              className={styles.searchbutton}
+              type="submit"
+              value="Search"
+            />
           </form>
         )}
       </div>
