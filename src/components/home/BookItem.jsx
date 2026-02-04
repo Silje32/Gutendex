@@ -1,13 +1,15 @@
-export default function BookItem({ data: { books } }) {
+import styles from "./BookList.module.css";
+
+export default function BookItem({ title, authors, formats, summaries }) {
   return (
     <li>
-      <p className={styles.booklist}>{styles.title}</p>
-      <h1>
-        {books.title} className={styles.booklist}
-      </h1>
-      <h2>{books.authors}</h2>
-      <img src={books.formats["image/jpeg"]} alt={books.title} />
-      <p>{books.summaries}</p>
+      <p className={styles.booklist}>{title}</p>
+      <h1>{title}</h1>
+      {authors.map((author) => (
+        <h2>{author.name}</h2>
+      ))}
+      <img src={formats["image/jpeg"]} alt={title} />
+      <p>{summaries}</p>
     </li>
   );
 }
