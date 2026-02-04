@@ -1,4 +1,4 @@
-import { BookList } from "../components/home/BookList.jsx";
+import { BookList } from "../components";
 import { useTempContext } from "../contex/tempContext.jsx";
 
 export default function HomePage() {
