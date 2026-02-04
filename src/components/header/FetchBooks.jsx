@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
+import { useTempContext } from "../../contex/tempContext";
 import FavoritesButton from "../buttons/Favoritesbutton";
 import styles from "../buttons/Buttons.module.css";
 
 export default function FetchBooks() {
-  const [books, setBooks] = useState([]);
+  const [books, setBooks] = useTempContext();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -47,9 +48,9 @@ export default function FetchBooks() {
               onChange={(e) => setBooks(e.target.value)}
             />
             <input
-              className={styles.searchbutton}
               type="submit"
               value="Search"
+              className={styles.searchbutton}
             />
           </form>
         )}
