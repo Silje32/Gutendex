@@ -20,7 +20,7 @@ export default function FetchBooks() {
         }
         const result = await response.json();
         setBooks(result);
-        console.log(result);
+        console.log("se her!!!", result);
       } catch (error) {
         setError(error.message);
       } finally {
