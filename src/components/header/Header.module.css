@@ -51,7 +51,7 @@ button:focus {
 }
 input {
   margin-top: 20px;
-  padding: 8px;
+  padding: 10px;
   font-size: 16px;
   border: 1px solid var(--steel);
   border-radius: 4px;
@@ -59,6 +59,20 @@ input {
 }
 input:focus {
   outline: 2px solid var(--steel);
+}
+.searchbutton {
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+}
+.searchbutton:hover {
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: var(--light-blue);
 }
 .header {
   padding: 10px;
