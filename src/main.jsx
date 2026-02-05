@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { TempContextProvider } from "./contex/tempContext.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./global.css";
 // Router components
@@ -41,6 +42,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+    <TempContextProvider>
+      <RouterProvider router={router} />
+    </TempContextProvider>
+  </StrictMode>,
 );
