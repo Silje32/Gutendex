@@ -2,7 +2,7 @@ import FetchBooks from "../../components/header/FetchBooks.jsx";
 import styles from "./Buttons.module.css";
 
 function SearchButton() {
-  function onButtonClick() {}
+  function onClick() {}
 
   return (
     <>
@@ -10,7 +10,7 @@ function SearchButton() {
         <button
           className={`${styles.mybutton} ${styles.searchbutton}`}
           type="submit"
-          onButtonClick={FetchBooks}
+          onClick={FetchBooks}
         ></button>
       </div>
     </>
