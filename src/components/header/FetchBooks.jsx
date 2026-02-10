@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useTempContext } from "../../contex/tempContext";
-import FavoritesButton from "../buttons/Favoritesbutton";
 import styles from "../buttons/Buttons.module.css";
 
 export default function FetchBooks() {
@@ -54,9 +53,6 @@ export default function FetchBooks() {
             />
           </form>
         )}
-      </div>
-      <div>
-        <FavoritesButton />
       </div>
     </>
   );
