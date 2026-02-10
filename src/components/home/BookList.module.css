@@ -1,7 +1,35 @@
 .booklist {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  background-color: blueviolet;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 50%;
+  gap: 10px;
+  color: var(--steel);
+  margin: auto;
+}
+
+p {
+  font-size: 20px;
+  width: 710px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.favorite-container {
+  display: flex;
+  justify-content: left;
+}
+
+.images {
+  height: auto;
+  margin: 10px 10px;
+  width: 60%;
+}
+
+.h1 {
+  font-size: 38px;
+  color: var(--steel);
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }

@@ -38,8 +38,13 @@
 .favoritesbutton {
   border-radius: 60%;
   font-size: 15px;
+  margin-left: 600px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
 }
+
 .favoritesbutton:hover {
   border-radius: 20%;
   font-size: 30px;
+  cursor: pointer;
 }
