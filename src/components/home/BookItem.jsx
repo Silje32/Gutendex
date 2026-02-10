@@ -8,10 +8,9 @@ export default function BookItem({ title, authors, formats, summaries }) {
         <FavoritesButton />
       </div>
       <li>
-        <p className={styles.booklist}>{title}</p>
         <h1>{title}</h1>
         {authors.map((author) => (
-          <h2>{author.name}</h2>
+          <h2>{authors.name}</h2>
         ))}
         <img src={formats["image/jpeg"]} alt={title} />
         <p>{summaries}</p>
