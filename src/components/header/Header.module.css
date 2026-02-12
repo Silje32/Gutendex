@@ -21,8 +21,9 @@
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 5px;
   margin-top: 20px;
+  width: 100%;
 }
 .categorylink {
   margin: 0 15px;
