@@ -17,8 +17,8 @@ export default function BookItem({ title, authors, formats, summaries }) {
           />
           <p>{summaries}</p>
         </li>
+        <FavoritesButton />
       </div>
-      <FavoritesButton />
     </>
   );
 }
