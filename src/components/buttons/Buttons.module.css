@@ -1,9 +1,3 @@
-.buttoncontainer1 {
-  display: flex;
-  justify-content: left;
-  margin: 40px;
-  gap: 10px;
-}
 .buttoncontainer2 {
   display: flex;
   justify-content: right;
