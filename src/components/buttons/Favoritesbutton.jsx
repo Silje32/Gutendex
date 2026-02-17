@@ -7,16 +7,11 @@ function FavoritesButton() {
 
   return (
     <>
-      <div className={styles.buttoncontainer1}>
-        <Link to={"/favorites"}>
-          <button
-            className={`${styles.mybutton} ${styles.favoritesbutton}`}
-            onClick={onClick}
-          >
-            ❤️
-          </button>
-        </Link>
-      </div>
+      <Link to={"/favorites"}>
+        <button className={styles.favoritesbutton} onClick={onClick}>
+          ❤️
+        </button>
+      </Link>
     </>
   );
 }
