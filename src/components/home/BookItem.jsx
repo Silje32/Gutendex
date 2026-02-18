@@ -8,7 +8,7 @@ export default function BookItem({ title, authors, formats, summaries }) {
         <li className={styles.booklist}>
           <h1 className={styles.h1}>{title}</h1>
           {authors.map((author) => (
-            <h2>{authors.name}</h2>
+            <h2>{author.name}</h2>
           ))}
           <img
             src={formats["image/jpeg"]}
