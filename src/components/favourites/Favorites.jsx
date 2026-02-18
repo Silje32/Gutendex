@@ -1,22 +1,18 @@
 import { useState, useEffect } from "react";
 import styles from "../favourites/Favorites.module.css";
+import BookItem from "../home/BookItem";
 
 export default function Favorites() {
   // Lagre favoritter i localStorage
+
   useEffect(() => {
-    const storedFavorites = localStorage.setItem(
-      "storedFavorites",
-      JSON.stringify(storedFavorites),
-    );
-    if (storedFavorites) {
-      setStoredFavorites(JSON.parse(storedFavorites));
-    }
+    localStorage.setItem("storedFavorites", JSON.stringify(storedFavorites));
   }, []);
 
   // Hente favoritter fra localStorage
   const [storedFavorites, setStoredFavorites] = useState(() => {
-    const storedFavorites = localStorage.getItem("storedFavorites");
-    return storedFavorites ? JSON.parse(storedFavorites) : [];
+    const savedData = localStorage.getItem("storedFavorites");
+    return savedData ? JSON.parse(savedData) : [];
   });
 
   return (
