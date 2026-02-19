@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import styles from "../favourites/Favorites.module.css";
-import BookItem from "../home/BookItem";
 
 export default function Favorites() {
   // Lagre favoritter i localStorage
 
   useEffect(() => {
     localStorage.setItem("storedFavorites", JSON.stringify(storedFavorites));
-  }, []);
+  }, [storedFavorites]);
 
   // Hente favoritter fra localStorage
   const [storedFavorites, setStoredFavorites] = useState(() => {
