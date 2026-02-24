@@ -35,25 +35,19 @@ export default function FetchBooks() {
   }
 
   return (
-    <>
-      <div className={styles.searchcontainer}>
-        {loading && <p>Loading...</p>}
-        {error && <p style={{ color: "red" }}>Error: {error}</p>}
-        {books && (
-          <form onSubmit={handleBooks}>
-            <input
-              type="text"
-              placeholder="Search Books..."
-              onChange={(e) => setBooks(e.target.value)}
-            />
-            <input
-              type="submit"
-              value="Search"
-              className={styles.searchbutton}
-            />
-          </form>
-        )}
-      </div>
-    </>
+    <div className={styles.searchcontainer}>
+      {loading && <p>Loading...</p>}
+      {error && <p style={{ color: "red" }}>Error: {error}</p>}
+      {books && (
+        <form onSubmit={handleBooks}>
+          <input
+            type="text"
+            placeholder="Search Books..."
+            onChange={(e) => setBooks(e.target.value)}
+          />
+          <input type="submit" value="Search" className={styles.searchbutton} />
+        </form>
+      )}
+    </div>
   );
 }
