@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTempContext } from "../../contex/tempContext";
 import styles from "../buttons/Buttons.module.css";
+import SearchButton from "../buttons/Searchbtn";
 
 export default function FetchBooks() {
   const { books, setBooks } = useTempContext();
@@ -45,7 +46,7 @@ export default function FetchBooks() {
             placeholder="Search Books..."
             onChange={(e) => setBooks(e.target.value)}
           />
-          <input type="submit" value="Search" className={styles.searchbutton} />
+          <SearchButton />
         </form>
       )}
     </div>
