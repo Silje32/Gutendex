@@ -12,7 +12,9 @@ function SearchButton() {
         className={`${styles.mybutton} ${styles.searchbutton}`}
         type="submit"
         onClick={FetchBooks}
-      ></button>
+      >
+        Search
+      </button>
     </div>
   );
 }
