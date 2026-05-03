@@ -1,17 +1,17 @@
-import { Link } from "react-router-dom";
 import Favorites from "../favourites/Favorites.jsx";
 import styles from "./Buttons.module.css";
 
-function FavoritesButton() {
-  function onClick() {}
+function FavoritesButton({ onClick }) {
+  function handleClick() {
+    onClick?.();
+    window.location.href = "/favorites";
+  }
 
   return (
     <div>
-      <Link to={"/favorites"}>
-        <button className={styles.favoritesbutton} onClick={onClick}>
-          ❤️
-        </button>
-      </Link>
+      <button className={styles.favoritesbutton} onClick={handleClick}>
+        ❤️
+      </button>
     </div>
   );
 }
